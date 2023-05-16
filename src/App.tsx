@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import QuestionCard from './components/QuestionsCard';
 
+
+const TOTAL_QUESTIONS=10;
+
 function App() {
 
 const [loading, setLoading] = useState(false)
@@ -29,7 +32,8 @@ function nextQuestion(){
  <button className='start' onClick={startTriva}> Start </button>
     <p className='score'>Score:</p>
     <p >Loading Questions ...</p>
-    <QuestionCard/>
+    <QuestionCard
+    questionNo={number+1} totalQuestions={TOTAL_QUESTIONS} question={questions[number].question} answers={questions[number].answers} userAnswer={userAnswers ? userAnswers[number] : undefined} callback={checkAnswer}/>
     <button className='next' onClick={nextQuestion}> Next question</button>
     </div>
   );
