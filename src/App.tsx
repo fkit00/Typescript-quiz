@@ -48,6 +48,10 @@ function nextQuestion(){
 
 }
 
+
+
+console.log(`This is in the app ${JSON.stringify(questions[1])}`)
+
   return (
     <div className="App">
  <h1>React Quiz</h1>

@@ -1,4 +1,3 @@
-import React from 'react'
 
 
 type Props ={
@@ -13,18 +12,20 @@ function QuestionCard({question,answers,userAnswer,callback,questionNo,totalQues
 
 return(
 
+
     <div> 
         <p className='number'>{questionNo}/{totalQuestions}</p>
         <p dangerouslySetInnerHTML={{__html:question}}></p>
         <div>
-    {answers.map((answer)=>(
+    {/* {answers.map(=>(
+        console.log("i'm in trouble")
         <div>
             <button disabled={userAnswer} onClick={callback}>
             <span dangerouslySetInnerHTML={{__html: answer}}/>
         </button>
         
         </div>
-    ))}
+    ))} */}
         </div>
     </div>
 )
