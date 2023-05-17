@@ -24,7 +24,6 @@ const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([])
 const [score, setScore] = useState(0)
 const [gameOver, setGameOver] = useState(true)
 
-console.log(questions)
 
 async function startTriva(){
 setLoading(true)
@@ -50,7 +49,7 @@ function nextQuestion(){
 
 
 
-console.log(`This is in the app ${JSON.stringify(questions[1])}`)
+
 
   return (
     <div className="App">
