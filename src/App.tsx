@@ -5,6 +5,7 @@ import { fetchQuizQuestions } from './API';
 // types
 
 import { QuestionState, Difficulty } from './API';
+import { GlobalStyle } from './App.styles';
 
 export type AnswerObject={
 question:string,
@@ -74,6 +75,8 @@ else{
 
 
   return (
+    <>
+    <GlobalStyle/>
     <div className="App">
  <h1>React Quiz</h1>
  {gameOver || userAnswers.length===TOTAL_QUESTIONS ?(
@@ -86,6 +89,7 @@ else{
      {!gameOver && !loading && userAnswers.length === number +1 && number !== TOTAL_QUESTIONS-1 ?  ( <button className='next' onClick={nextQuestion}> Next question</button>): null}
    
     </div>
+    </>
   );
 }
 
