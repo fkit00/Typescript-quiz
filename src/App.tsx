@@ -6,7 +6,7 @@ import { fetchQuizQuestions } from './API';
 
 import { QuestionState, Difficulty } from './API';
 
-type AnswerObject={
+export type AnswerObject={
 question:string,
 answer: string,
 correct:boolean, 
@@ -61,6 +61,14 @@ setLoading(false)
 }
 
 function nextQuestion(){
+const nextQuestion =number+1
+if (nextQuestion=== TOTAL_QUESTIONS){
+  setGameOver(true)
+}
+else{
+  setNumber(nextQuestion)
+}
+
 
 }
 
@@ -70,7 +78,7 @@ function nextQuestion(){
  <h1>React Quiz</h1>
  {gameOver || userAnswers.length===TOTAL_QUESTIONS ?(
  <button className='start' onClick={startTriva}> Start </button>) :null}
-  {!gameOver ? <p className='score'>Score:</p> :null}
+  {!gameOver ? <p className='score'>Score: {score}</p> :null}
   {loading ? <p >Loading Questions ...</p> :null}
 
 {!loading && !gameOver && (<QuestionCard
