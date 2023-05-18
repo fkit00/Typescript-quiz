@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    background-image:url(${bg_image});
+  
     background-size: cover;
     margin:0;
     padding: 0 20px;
@@ -26,5 +26,24 @@ body{
 `
 
 export const Wrapper = styled.div`
+display:flex;
+flex-direction: column:
+alighn-items: center;
+
+
+> p{
+    color:white;
+}
+
+.score{
+    color:white, 
+    font-size: 2rem;
+    margin:0;
+}
+
+.h1{
+
+}
+
 
 `
