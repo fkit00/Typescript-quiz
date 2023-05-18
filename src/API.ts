@@ -27,8 +27,9 @@ export async function fetchQuizQuestions(amount:number, difficulty:Difficulty){
     const data = await (await fetch(endpoint)).json()
 
     return data.results.map((question: Question) => ({
-         console.log(`I'm in the map {question}`)
-        }))
+        ...question,
+        answers: shuffleArray([...question.incorrect_answers, question.correct_answer])
+      }))
 
     };
 
