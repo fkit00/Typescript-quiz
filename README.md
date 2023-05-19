@@ -3,7 +3,7 @@
 Learning
 
 - Far more comfortable with Types and importing exporting them across components 
-- Using gloabls which i've done in python but hadn't occured to me to use in javascript before
+- Using globals which i've done in python but hadn't occured to me to use in javascript before
 - Using functions in utils rather than straight in the component
 - First time dealing with an API in typescript but very smooth sailing
 - Used alot of Ternary's, however the code looks messy as a result 
