@@ -36,24 +36,24 @@ export const Wrapper = styled.div`
     color: white;
 }
 
-.score{
+.score {
     color: black;
     font-size: 2rem;
     margin: 0;
 }
 
-.h1{
-background-image: linear-gradient(180deg,#fff,#87f1ff  );
-background-size: 100%;
-background-clip: text;
---webkit-bacground-clip: text; 
---webkit-text-fill-color: transparent; 
+h1 {
+
+-webkit-bacground-clip: text; 
+
 -moz-background-clip: text;
 -moz-text-fill-color: transparent;
-filter: drop-shadow(2px 2px #0085a3);
+
 font-size: 70px;
+font-weighr: 400;
 text-align: center;
-margin: 20px
+margin: 20px;
+color: black;
 
 
 }
