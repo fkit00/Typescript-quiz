@@ -10,10 +10,10 @@ html{
 body{   
     background-image: url(${bgImage});
     background-size: cover;
-    margin:0;
+    margin: 0;
     padding: 0 20px;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -27,13 +27,13 @@ body{
 
 export const Wrapper = styled.div`
 
-    display:flex;
-    flex-direction: column:
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 
 > p {
-    color: white;
+    color: black;
 }
 
 .score {
@@ -56,6 +56,22 @@ margin: 20px;
 color: black;
 
 
+}
+
+.start, .next {
+cursor: pointer;
+border: 2px solid black;
+box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+border-radius: 10px;
+height: 40px;
+margin: 20px 0;
+padding: 0 40px;
+
+}
+
+.start {
+
+    max-width: 200px; 
 }
 
 
